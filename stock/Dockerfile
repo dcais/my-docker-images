@@ -3,6 +3,6 @@ FROM openjdk:8-jdk-alpine
 ARG ARG_EXEC_TARGET_JAR=/stock.jar 
 
 ENV EXEC_TARGET_JAR ${ARG_EXEC_TARGET_JAR}
-COPY ./jar/stock-0.0.4-SNAPSHOT.jar ${ARG_EXEC_TARGET_JAR}
+COPY ./jar/stock-0.0.5-SNAPSHOT.jar ${ARG_EXEC_TARGET_JAR}
 COPY entry-point.sh /entry-point.sh
 ENTRYPOINT ["./entry-point.sh"]
